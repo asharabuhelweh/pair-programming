@@ -1,9 +1,9 @@
 'use strict';
 let a = 0;
 
-// new function called userName
+// new function called userNameFirst
 let userName;
-function userNameFirst(){
+function userNameFirst() {
   userName = prompt('what is your name?');
   console.log(userName);
   alert('Welcome to guessing game website ' + userName + '  ^_^ ');
@@ -11,6 +11,8 @@ function userNameFirst(){
   alert('I will ask you five questions about me,please answer with yes/y or no/n');
 }
 userNameFirst();
+
+// new function called likePhotography1
 
 function likePhotography1() {
   let likePhotography = prompt('do I like photography?');
@@ -32,7 +34,9 @@ function likePhotography1() {
 }
 likePhotography1();
 
-const likeDriving1 = function(){
+// new function/const called likeDriving1
+
+const likeDriving1 = function () {
 
   let likeDriving = prompt('do I like driving?');
   likeDriving = likeDriving.toLowerCase();
@@ -49,7 +53,9 @@ const likeDriving1 = function(){
 };
 likeDriving1();
 
-const likeMeanPeople1 = function(){
+// new function/const called likeMeanPeople1
+
+const likeMeanPeople1 = function () {
 
   let likeMeanPeople = prompt('do I like mean people?');
   likeMeanPeople = likeMeanPeople.toLowerCase();
@@ -66,9 +72,9 @@ const likeMeanPeople1 = function(){
 };
 likeMeanPeople1();
 
-//new function called greatPersonality
+//new function called greatPersonality1
 
-const greatPersonality1 = function(){
+const greatPersonality1 = function () {
   let greatPersonality = prompt('do I have great personality?');
   greatPersonality = greatPersonality.toLowerCase();
   console.log(greatPersonality);
@@ -84,7 +90,9 @@ const greatPersonality1 = function(){
 };
 greatPersonality1();
 
-const favColorRed = function(){
+//new function called favColorRed
+
+const favColorRed = function () {
   let favColor = prompt('is it the brown my favourite color?');
   favColor = favColor.toLowerCase();
   console.log(favColor);
@@ -103,8 +111,9 @@ const favColorRed = function(){
 };
 favColorRed();
 
+//new function called guessNumber1
 
-const guessNumber1 = function(){
+const guessNumber1 = function () {
   let condition1 = false;
 
 
@@ -133,7 +142,9 @@ const guessNumber1 = function(){
 };
 guessNumber1();
 
-const favoriteDrink = function (){
+//new function called favoriteDrink
+
+const favoriteDrink = function () {
 
   let favDrink = ['tea', 'coffee', 'milk', 'nescafe', 'orange juice', 'pepsi'];
 
