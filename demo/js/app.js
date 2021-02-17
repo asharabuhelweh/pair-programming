@@ -133,32 +133,36 @@ const guessNumber1 = function(){
 };
 guessNumber1();
 
-let favDrink = ['tea', 'coffee', 'milk', 'nescafe', 'orange juice', 'pepsi'];
+const favoriteDrink = function (){
 
-let condition2 = false;
-let drinkName = '';
-for (let j = 0; j < 6; j++) {
-  drinkName = prompt('now can you guess what is my favorite drink? be careful you have 6 trails ');
-  for (let check = 0; check < favDrink.length; check++) {
-    if (drinkName === favDrink[check]) {
+  let favDrink = ['tea', 'coffee', 'milk', 'nescafe', 'orange juice', 'pepsi'];
 
-      a++;
-      condition2 = true;
-      alert('correct answer ^_^ ,the correct answers are ' + favDrink[0] + ',' + favDrink[1] + ',' + favDrink[2] + ',' + favDrink[3] + ',' + favDrink[4]) + ',' + favDrink[5];
+  let condition2 = false;
+  let drinkName = '';
+  for (let j = 0; j < 6; j++) {
+    drinkName = prompt('now can you guess what is my favorite drink? be careful you have 6 trails ');
+    for (let check = 0; check < favDrink.length; check++) {
+      if (drinkName === favDrink[check]) {
 
+        a++;
+        condition2 = true;
+        alert('correct answer ^_^ ,the correct answers are ' + favDrink[0] + ',' + favDrink[1] + ',' + favDrink[2] + ',' + favDrink[3] + ',' + favDrink[4]) + ',' + favDrink[5];
+
+        break;
+      }
+    }
+    if (condition2 === true) {
       break;
     }
+    alert('sorry try again');
   }
-  if (condition2 === true) {
-    break;
+  if (condition2 === false) {
+    alert('sorry but you have exhausted all trails,the correct answer are ' + favDrink[0] + ',' + favDrink[1] + ',' + favDrink[2] + ',' + favDrink[3] + ',' + favDrink[4]) + ',' + favDrink[5];
+
+
   }
-  alert('sorry try again');
-}
-if (condition2 === false) {
-  alert('sorry but you have exhausted all trails,the correct answer are ' + favDrink[0] + ',' + favDrink[1] + ',' + favDrink[2] + ',' + favDrink[3] + ',' + favDrink[4]) + ',' + favDrink[5];
+  alert('your score is ' + a + '/7');
 
+};
 
-}
-alert('your score is ' + a + '/7');
-
-
+favoriteDrink();
