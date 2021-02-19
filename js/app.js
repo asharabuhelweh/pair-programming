@@ -116,27 +116,34 @@ favColorRed();
 const guessNumber1 = function () {
   let condition1 = false;
 
-
   alert('now guessing number game ,be ready!');
 
   for (let i = 0; i < 4; i++) {
-    let guessNumber1 = prompt('can you please guess a random number');
+    let guessNumber1 = parseInt(prompt('can you please guess a random number'));
 
-    if (guessNumber1 > '3') {
+    if (guessNumber1 > 3) {
       alert('too high');
     }
 
-    else if (guessNumber1 < 3) { alert('too low'); }
-    else {
-      a++;
+    else if (guessNumber1 < 3) {
+      alert('too low');
+    }
+
+
+    else if (guessNumber1 === 3) {
       condition1 = true;
       alert('right guessing congrats ^_^');
+      a++;
       break;
     }
-  }
+    else {
+      alert('only numbers are allowed ');
+    }
 
-  if (condition1 === false) {
-    alert('sorry but you have exhausted all attempts The correct answer is 3');
+    if (condition1 === false) {
+      alert('sorry but you have exhausted all attempts The correct answer is 3');
+
+    }
   }
 
 };
