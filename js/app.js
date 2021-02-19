@@ -1,4 +1,4 @@
-/*'use strict';
+'use strict';
 let a = 0;
 
 // new function called userNameFirst
