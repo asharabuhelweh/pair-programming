@@ -1,5 +1,7 @@
 body {
   background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/04/64/07/9858739f3d085d2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
   color:black;
@@ -87,5 +89,13 @@ color: black;
 font-family: Lucida Sans;
 font-size: 15px;
 border-radius: 10px;
+
+}
+button{
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: sans-serif;
 
 }
